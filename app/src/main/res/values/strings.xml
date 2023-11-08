@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CoffeeHunter</string>
+
+    <string-array name="Gender">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+    <string name="title_activity_nearby_coffee_shops_screen">NearbyCoffeeShopsScreen</string>
+</resources>

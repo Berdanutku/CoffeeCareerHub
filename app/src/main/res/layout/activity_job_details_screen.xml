@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobDetailsScreen">
+
+    <EditText
+        android:id="@+id/JobDetailsPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/JobDetailsDuration"
+        app:layout_constraintEnd_toEndOf="@+id/JobDetailsAge"
+        app:layout_constraintStart_toStartOf="@+id/JobDetailsAge"
+        app:layout_constraintTop_toBottomOf="@+id/JobDetailsAge" />
+
+    <EditText
+        android:id="@+id/JobDetailsDuration"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter the duration of your work experience"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/JobDetailsPrevious"
+        app:layout_constraintEnd_toEndOf="@+id/JobDetailsPhone"
+        app:layout_constraintStart_toStartOf="@+id/JobDetailsPhone"
+        app:layout_constraintTop_toBottomOf="@+id/JobDetailsPhone" />
+
+    <EditText
+        android:id="@+id/JobDetailsPrevious"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter the previous coffee shops you have worked"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/JobDetailsSaveButton"
+        app:layout_constraintEnd_toEndOf="@+id/JobDetailsDuration"
+        app:layout_constraintStart_toStartOf="@+id/JobDetailsDuration"
+        app:layout_constraintTop_toBottomOf="@+id/JobDetailsDuration" />
+
+    <Button
+        android:id="@+id/JobDetailsSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="Save"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/JobDetailsPrevious"
+        app:layout_constraintStart_toStartOf="@+id/JobDetailsPrevious"
+        app:layout_constraintTop_toBottomOf="@+id/JobDetailsPrevious" />
+
+    <TextView
+        android:id="@+id/JobDetailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Job Informations"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/JobDetailsAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/JobDetailsAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter your age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/JobDetailsPhone"
+        app:layout_constraintEnd_toEndOf="@+id/JobDetailsText"
+        app:layout_constraintStart_toStartOf="@+id/JobDetailsText"
+        app:layout_constraintTop_toBottomOf="@+id/JobDetailsText" />
+
+    <ImageButton
+        android:id="@+id/JobDetailsBackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="600dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+</androidx.constraintlayout.widget.ConstraintLayout>

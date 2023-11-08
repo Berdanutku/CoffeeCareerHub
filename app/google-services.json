@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "138752521991",
+    "firebase_url": "https://coffeecareerhub-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "coffeecareerhub",
+    "storage_bucket": "coffeecareerhub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138752521991:android:c100e92b937d578ec277a2",
+        "android_client_info": {
+          "package_name": "com.example.coffeecareerhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138752521991-91nr821d5qo853lh45kcrj9rtrmbhn24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI_mpiwEDRFUKdkkYoaGoZ-rD7ZcOQIeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138752521991-91nr821d5qo853lh45kcrj9rtrmbhn24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

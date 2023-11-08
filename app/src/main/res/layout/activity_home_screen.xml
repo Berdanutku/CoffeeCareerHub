@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeScreen">
+
+    <ImageView
+        android:id="@+id/homeProfilePic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/manlogo" />
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeNearButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeProfilePic"
+        app:layout_constraintStart_toStartOf="@+id/homeProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/homeProfilePic" />
+
+    <ImageButton
+        android:id="@+id/homeChangeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="353dp"
+        android:background="#FFFFFF"
+        android:src="@android:drawable/ic_menu_edit"
+        android:text="Change Profile"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeProfilePic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/homeNearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Nearby Coffee Shops"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeFavButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeText"
+        app:layout_constraintStart_toStartOf="@+id/homeText"
+        app:layout_constraintTop_toBottomOf="@+id/homeText" />
+
+    <Button
+        android:id="@+id/homeFavButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="Favourite Coffee Shops"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeRequestButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeNearButton"
+        app:layout_constraintStart_toStartOf="@+id/homeNearButton"
+        app:layout_constraintTop_toBottomOf="@+id/homeNearButton" />
+
+    <Button
+        android:id="@+id/homeRequestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"
+        android:text="View Job Requests"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/homeFavButton"
+        app:layout_constraintStart_toStartOf="@+id/homeFavButton"
+        app:layout_constraintTop_toBottomOf="@+id/homeFavButton" />
+
+    <ImageButton
+        android:id="@+id/homeBackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="600dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageButton
+        android:id="@+id/homeExitButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="600dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
